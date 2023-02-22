@@ -11,5 +11,5 @@ echo  %arg1% %arg2%
 
 @REM All a UAT tool provided by Unreal which builds a Win64 Project
 @REM And output its at the destination
-RunUAT BuildCookRun -project="%mypath:~0,-1%/%src%" -platform=Win64 -clientconfig=DebugGame -build -cook -stage -archive -archivedirectory="%mypath:~0,-1%/%dest%"
+runUAT BuildCookRun -project="%mypath:~0,-1%/%src%" -platform=Win64 -clientconfig=DebugGame -build -cook -stage -archive -archivedirectory="%mypath:~0,-1%/%dest%"
 
