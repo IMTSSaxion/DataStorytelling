@@ -18,3 +18,11 @@ jobs:
           cd AutomationScripts
           ls
           ./compile.bat "../UnrealProject/UnrealProject.uproject" "../UnrealProject/Build"
+      - name: Zip Project
+        run: |
+          ls
+          powershell Compress-Archive ./UnrealProject/Builds/Windows/* windowsBuild.zip
+      - name: Download Butler
+        run: |
+          curl -o butler.zip https://broth.itch.ovh/butler/windows-amd64/LATEST/archive/default
+          powershell Expand-Archive butler.zip
