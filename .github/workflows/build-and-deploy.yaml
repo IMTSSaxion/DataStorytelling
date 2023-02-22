@@ -26,6 +26,8 @@ jobs:
         run: |
           echo ${{ secrets.ITCH_IO_API_KEY }}
           ls
-          ./butler/butler.exe push UnrealProject/Builds/Windows matioma/storytellingwithdata-acc:win-64
+          echo "Unreal project"
+          ls ./UnrealProject/Builds/Windows/ 
+          ./butler/butler.exe push ./UnrealProject/Builds/Windows/ matioma/storytellingwithdata-acc:win-64
         env:
           BUTLER_API_KEY: ${{ secrets.ITCH_IO_API_KEY }}
