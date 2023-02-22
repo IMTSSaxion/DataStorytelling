@@ -24,6 +24,7 @@ jobs:
           powershell Expand-Archive butler.zip
       - name: Publish the build Folder
         run: |
+          ls
           ./butler/butler.exe push UnrealProject/Builds/Windows matioma/storytellingwithdata-acc:win-64
         env:
           BUTLER_API_KEY: ${{ secrets.ITCH_IO_API_KEY }}
