@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: build-Project
         run: |
           cd AutomationScripts
