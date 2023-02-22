@@ -23,3 +23,7 @@ https://visualstudio.microsoft.com/downloads/
 ```
 
 4. Clone the project
+
+## Disclaimer
+
+The code in this repository is not allowed to be modified, used or shared anywhere outside of this project.
