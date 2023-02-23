@@ -3,9 +3,17 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - "feature/**"
+      - "*"
 
 jobs:
+  Github-example-tags:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: GitHub Tag Name example
+        run: |
+          echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
+          echo "Tag name from github.ref_name: ${{  github.ref_name }}"
+
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
