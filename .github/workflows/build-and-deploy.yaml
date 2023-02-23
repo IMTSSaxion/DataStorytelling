@@ -17,7 +17,7 @@ jobs:
         run: |
           cd AutomationScripts
           ls
-          ./compile.bat "../UnrealProject/UnrealProject.uproject" "../UnrealProject/Build"
+          ./compile.bat "../UnrealProject/UnrealProject.uproject" "../UnrealProject/Build" "Win64"
       - name: Download Butler
         run: |
           curl -o butler.zip https://broth.itch.ovh/butler/windows-amd64/LATEST/archive/default
